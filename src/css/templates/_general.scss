@@ -408,6 +408,14 @@ section {
       max-width: 100%;
     }
   }
+  .profile  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0 0.5rem;
+    }
+  }
 }
 
 /*--------------------------------------------------------------

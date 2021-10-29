@@ -1,8 +1,7 @@
 ---
 layout: layout.njk
 barbaTitle: Home
-title: Hello
-data: collections.blogposts
+title: Fun
 ---
 
 {% block hero %}
@@ -16,350 +15,28 @@ data: collections.blogposts
 
 {% block contenthere %}
   <main id="main">
-    <!-- ======= Testimonials Section ======= -->
-    <section id="tools" class="tools">
+    <!-- ======= Tools Section ======= -->
 
-      <div  data-aos="fade-up">
-        <div class="container">
-          <header class="section-header p-0">
-            <span class="h6 text-uppercase">Outils</span>
-            <h2 class="fw-black col-8 m-auto">Développement d'outils d'apprentissage libres et ouverts</h2>
-          </header>
-        </div>
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="swiper-wrapper">
+    {% include "partials/tools.njk" %}
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="figure">
-                  <img src="/static/images/tools/catalog.png" class="testimonial-img" alt="">
-                </div>
-                <p class="display-6 fw-bold">
-                  Catalogue et place de marché
-                </p>
-                <div class="profile mt-auto">
-                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="figure">
-                  <img src="/static/images/tools/learnapp.png" class="testimonial-img" alt="">
-                </div>
-                <p class="display-6 fw-bold">
-                  Système de gestion d'apprentissage
-                </p>
-                <div class="profile mt-auto">
-                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="figure">
-                  <img src="/static/images/tools/discuss.png" class="testimonial-img" alt="">
-                </div>
-                <p class="display-6 fw-bold">
-                  Gestion de communauté
-                  et communication
-                </p>
-                <div class="profile mt-auto">
-                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="figure">
-                  <img src="/static/images/tools/multimedia.png" class="testimonial-img" alt="">
-                </div>
-                <p class="display-6 fw-bold">
-                  Services
-                  multimédias
-                </p>
-                <div class="profile mt-auto">
-                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="figure">
-                  <img src="/static/images/tools/learning.png" class="testimonial-img" alt="">
-                </div>
-                <p class="display-6 fw-bold">
-                  Learning
-                  Analytics
-                </p>
-                <div class="profile mt-auto">
-                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination-test"></div>
-        </div>
-
-      </div>
-
-    </section><!-- End Testimonials Section -->
+    <!-- End tools Section -->
 
 
 
-    <!-- ======= Values Section ======= -->
-    <section id="apps" class="apps">
+    <!-- ======= Apps Section ======= -->
 
-      <div class="container" data-aos="fade-up">
+    {% include "partials/apps.njk" %}
 
-        <header class="section-header">
-          <span class="h6 text-uppercase">Plateformes</span>
-          <h2>Des plateformes et services
-            d'apprentissage sur mesure</h2>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-12" id="toolsapp">
-
-            <div class="swiper toolsSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" id="slide-app1">Slide 1</div>
-                <div class="swiper-slide" id="slide-app2">Slide 2</div>
-                <div class="swiper-slide" id="slide-app3">Slide 3</div>
-                <div class="swiper-slide" id="slide-app4">Slide 4</div>
-              </div>
-            </div>
-
-            <div id="toolsChoices">
-              <a  id="goto0" class="gototools button filter-active " data-index-number="0">
-                <h4>FUN MOOC</h4>
-                <p><small>
-                    Des cours en ligne pour découvrir, apprendre, progresser et réussir
-                  </small></p>
-              </a>
-              <a  id="goto1" class="gototools button " data-index-number="1">
-                <h4>FUN CAMPUS</h4>
-                <p><small>
-                    Des formations pour enrichir les cursus
-                  </small></p>
-              </a>
-              <a  id="goto2" class="gototools button " data-index-number="2">
-                <h4>FUN Corporate</h4>
-                <p><small>
-                    Informez-vous sur les évolutions du bâtiment durable !
-                  </small></p>
-              </a>
-              <a  id="goto3" class="gototools button " data-index-number="3">
-                <h4>Meeting.education</h4>
-                <p><small>
-                    Des cours en ligne pour découvrir, apprendre, progresser et réussir
-                  </small></p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ======= END Values Section ======= -->
+    <!-- ======= END Apps Section ======= -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="/static/images/theme/documentation.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <span class="h6 text-uppercase">Éthique</span>
-              <h2 class="h2 fw-black text-blue">Une posture éthique et respectueuse de la réglementation, des droits des personnes et de la souveraineté</h2>
-              <ul>
-                <li>Logiciels libres et ouverts</li>
-                <li>RGPD</li>
-                <li>Accessibilité</li>
-                <li>Facilitateur de souveraineté numérique</li>
-              </ul>
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row gx-5">
-          <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <a href="" target="_blank"><img src="/static/images/theme/ethique1.png" alt=""></a>
-          </div>
-          <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <a href="" target="_blank"><img src="/static/images/theme/ethique2.png" alt=""></a>
-          </div>
-          <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <a href="" target="_blank"><img src="/static/images/theme/ethique3.png" alt=""></a>
-          </div>
-        </div>
-      </div>
-
-    </section>
+    {% include "partials/About.njk" %}
     <!-- ======= End About Section ======= -->
 
 
     <!-- ======= Fun by Number  ======= -->
-    <section id="funByNumber" class=" ">
-
-      <div class="container my-5" data-aos="fade-up">
-
-
-
-
-
-
-        <div style="display: none"> {{ collections.blogposts }}
-          {% set posts = collections.blogposts | limit(6) %}
-          {{ posts.length }}
-          {% for post in posts %}
-            {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--3cols@medium">{% endif %}
-            <li>
-              {% include "partials/blogcard.njk" %}
-            </li>
-            {% if loop.last %}</ul>{% endif %}
-          {% endfor %}
-        </div>
-
-
-        <div class="rowby24 gy-2">
-          <div  id="isonumb">
-            <div class="grid-sizer"></div>
-
-            <div class="col-lg-5  mt-5 itemNumb">
-              <span class="h6 text-uppercase">Ressources et communauté</span>
-              <h2 class="h2 fw-black">France Université Numérique en quelques chiffres </h2>
-            </div>
-
-            <div class="col-lg-6  mt-5 itemNumb">
-              <div class="numb-box is-horizontal">
-                <div class="numb-text">
-                  <span class="numb-number">800</span>
-                  <h3 class="numb-title">mille vues de vidéos par mois</h3>
-                </div>
-                <div class="numb-img">
-                  <img src="/static/images/numbers/videos.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-5 mt-2 me-5 itemNumb">
-              <div class="numb-box is-horizontal">
-                <div class="numb-text">
-                  <span class="numb-number">1900</span>
-                  <h3 class="numb-title">sessions de cours</h3>
-                </div>
-                <div class="numb-img">
-                  <img src="/static/images/numbers/sessions.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-lg-4 col-xl-5 mt-2 itemNumb">
-              <div class="numb-box is-horizontal">
-                <div class="numb-text">
-                  <span class="numb-number">140</span>
-                  <h3 class="numb-title">Institutions publiques et organisations partenaires</h3>
-                </div>
-                <div class="numb-img">
-                  <img src="/static/images/numbers/institution.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-7 col-xl-5  mt-2 itemNumb">
-              <div class="numb-box is-horizontal">
-                <div class="numb-text">
-                  <span class="numb-number">10</span>
-                  <h3 class="numb-title">projets actifs de développement libres et ouverts</h3>
-                </div>
-                <div class="numb-img">
-                  <img src="/static/images/numbers/project.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-xl-3 mt-2 itemNumb">
-              <div class="numb-box is-vertical">
-                <div class="numb-text">
-                  <span class="numb-number">1</span>
-                  <h3 class="numb-title">million d'événements d'apprentissage par jour</h3>
-                </div>
-                <div class="numb-img">
-                  <img style="margin-bottom: -20px;margin-right: -40px;"
-                       src="/static/images/numbers/apprent.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-xl-3   mt-2 itemNumb">
-              <div class="numb-box is-vertical">
-                <div class="numb-text">
-                  <span class="numb-number">9500</span>
-                  <h3 class="numb-title">personnes au sein de la communauté</h3>
-                </div>
-                <div class="numb-img">
-                  <img src="/static/images/numbers/communaute.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-5   mt-2 itemNumb">
-              <div class="numb-box is-horizontal">
-                <div class="numb-text">
-                  <span class="numb-number">3</span>
-                  <h3 class="numb-title">millions d'apprenants </h3>
-                </div>
-                <div class="numb-img">
-                  <img src="/static/images/numbers/learning.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-lg-7 col-xl-5   offset-xl-1 mt-2 itemNumb">
-              <div class="numb-box is-horizontal">
-                <div class="numb-text">
-                  <span class="numb-number">14</span>
-                  <h3 class="numb-title">millions de visites annuelles</h3>
-                </div>
-                <div class="numb-img">
-                  <img src="/static/images/numbers/visit.png" class="img-fluid" alt="">
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
-
-
-
-
-      </div>
-
-    </section>
+    {% include "partials/numbers.njk" %}
     <!-- ======= End Numbs Section ======= -->
-
-
-
-
 
 
     <!-- ======= usertest Section ======= -->
@@ -368,7 +45,7 @@ data: collections.blogposts
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Témoignages</h2>
+          <h2>{{ 'Testimonials' | i18n }}</h2>
         </header>
 
         <div class="usertest-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
@@ -456,12 +133,9 @@ data: collections.blogposts
 
     </section><!-- End usertest Section -->
 
-    <section id="contact" class="text-center">
-      <h2 class="h1 fw-black mb-5">Contactez-nous</h2>
-      <h3 class="h5 col-8 m-auto mb-5 mt-0 fw-light"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam 🎉</h3>
-      <a href="" class="btn btn-lg btn-info"><span class="text-white">Formulaire pour être recontacté</span></a>
-    </section>
 
+
+    {% include "partials/contact.njk" %}
 
 
   </main><!-- End #main -->
