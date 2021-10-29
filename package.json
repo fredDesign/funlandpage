@@ -7,7 +7,7 @@
   "scripts": {
     "build:bysp": "snowpack build",
     "dev": "snowpack dev  --config snowpack.config.js",
-    "compile:js": "yarn run esbuild --bundle --define:process.env.NODE_ENV=\\\"development\\\" --minify --sourcemap src/scripts/index.js --outdir=./build/static/js",
+    "compile:js": "yarn run esbuild --bundle --define:process.env.NODE_ENV=\\\"development\\\" --minify --sourcemap src/scripts/index.js --outdir=./build/static/scripts",
     "compile:css": "yarn run sass --style=compressed --load-path=node_modules  src/css:./build/static/css ",
     "build": "run-p elev compile:js compile:css ",
     "elev": "npx @11ty/eleventy  --output=build"
