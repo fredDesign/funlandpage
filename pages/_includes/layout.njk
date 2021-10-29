@@ -46,28 +46,9 @@ title: Hello World
 </header><!-- End Header -->
 
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="hero d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7 d-flex flex-column justify-content-center hero-content">
-        <h1 class="gradient" data-aos="fade-up">{{ 'title1' | i18n }}</h1>
-        <h2 data-aos="fade-up" data-aos-delay="400" class="h5 col-10">{{ 'undertitle1' | i18n }}</h2>
-        <div data-aos="fade-up" data-aos-delay="600" class="d-flex mt-5">
-          <div class="text-center text-lg-start">
-            <a href="#tools" class="btn btn-blue btn-lg scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-              <span class="text-white">En savoir plus</span>
-              <i class="bi bi-arrow-down text-white ms-3"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-5 hero-img" data-aos="zoom-out" data-aos-delay="200">
-      </div>
-    </div>
-  </div>
-</section><!-- End Hero -->
+{% block hero %}
 
+{% endblock %}
 
 
 
