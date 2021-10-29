@@ -7,7 +7,7 @@
   "scripts": {
     "build:bysp": "snowpack build",
     "dev": "snowpack dev  --config snowpack.config.js",
-    "compile:js": "yarn run esbuild --bundle --define:process.env.NODE_ENV=\\\"development\\\" --minify --sourcemap src/scripts/index.js --outdir=./build/static/scripts",
+    "compile:js": "yarn run esbuild --bundle --minify    src/scripts/index.js --outdir=./build/static/scripts",
     "compile:css": "yarn run sass --style=compressed --load-path=node_modules  src/css:./build/static/css ",
     "build": "run-s elev compile:js compile:css mk:statics cp:img cp:fonts",
     "elev": "npx @11ty/eleventy  --output=build",
@@ -21,7 +21,6 @@
     "cross-env": "^7.0.2",
     "lodash.get": "^4.4.2",
     "ncp": "^2.0.0",
-    "npm-run-all": "^4.1.5",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
