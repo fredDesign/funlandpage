@@ -1,17 +1,16 @@
 {
   "name": "11ty-bootsrap-snowpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Use Frontend ========",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "snowpack build",
+    "build:bysp": "snowpack build",
     "dev": "snowpack dev  --config snowpack.config.js",
-    "watch": "yarn watch:js  & yarn watch:css ",
-    "compile:js": "yarn run esbuild --bundle --define:process.env.NODE_ENV=\\\"development\\\" --minify --sourcemap src/scripts/index.js --outdir=./_build/js",
-    "watch:js": "nodemon --watch ./src/scripts --exec \"yarn compile:js\" -e ts,js,jsx,scss,png,jpg,svg",
-    "compile:css": "yarn run sass --style=compressed --load-path=node_modules  src/css:./_build/styles ",
-    "watch:css": "yarn run sass -c --poll --watch --load-path=node_modules  src/css:./_build/styles "
+    "compile:js": "yarn run esbuild --bundle --define:process.env.NODE_ENV=\\\"development\\\" --minify --sourcemap src/scripts/index.js --outdir=./build/static/js",
+    "compile:css": "yarn run sass --style=compressed --load-path=node_modules  src/css:./build/static/css ",
+    "build": "run-p elev compile:js compile:css ",
+    "elev": "npx @11ty/eleventy  --output=build"
   },
   "keywords": [],
   "author": "",
@@ -63,5 +62,13 @@
     "watch": [
       "src"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredDesign/funlandpage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fredDesign/funlandpage/issues"
+  },
+  "homepage": "https://github.com/fredDesign/funlandpage#readme"
 }
