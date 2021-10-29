@@ -201,17 +201,13 @@ Swiper.use([Navigation, Pagination,Autoplay]);
          centeredSlides: true,
          autoplay: {
              delay: 5000,
-             disableOnInteraction: true
+             disableOnInteraction: false
          },
          slidesPerView: 1,
          breakpoints: {
-             320: {
-                 slidesPerView: "auto",
-                 spaceBetween: 40
-             },
-
              1200: {
                  slidesPerView: "auto",
+                 spaceBetween: 40
              }
          },
          pagination: {
