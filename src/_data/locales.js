@@ -1,7 +1,7 @@
 module.exports = [
   {
     label: 'English',
-    code: 'en-GB'
+    code: 'en'
   },
   {
     label: 'Francais',
