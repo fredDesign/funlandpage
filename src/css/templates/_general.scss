@@ -451,8 +451,9 @@ section {
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
-    width: 100vw ;
-    height: 12.5vw;
+    width: 100% ;
+    height: auto;
+    padding-bottom: 12.5%;
     z-index: 0;
     pointer-events: none;
   }
@@ -501,6 +502,9 @@ section {
     background-repeat: no-repeat;
     left: 50%;
     transform: translate(-50%,0);
+  }
+  .swiper-slide {
+    text-indent: -300000px;
   }
 }
 #toolsChoices {
@@ -964,8 +968,9 @@ section {
     background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
-    width: 100vw ;
-    height: 30vw;
+    width: 100% ;
+    height: auto;
+    padding-bottom:30%;
     z-index: 0;
     pointer-events: none;
   }
