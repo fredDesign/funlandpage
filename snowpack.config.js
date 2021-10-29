@@ -39,7 +39,7 @@ module.exports = {
     port: 8010
   },
   buildOptions: {
-    out: "_build/",
+    out: "build/",
     //out: "_build/",
     clean: true,
     minify: true,
