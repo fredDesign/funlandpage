@@ -523,6 +523,7 @@ section {
   h4 {font-weight: 800}
   > a {
     color: $blacked;
+    cursor: pointer;
   }
   .filter-active {
     * {
