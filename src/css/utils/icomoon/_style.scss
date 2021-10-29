@@ -1,0 +1,199 @@
+@import "variables";
+
+
+
+@mixin icomoon-helper($code: null) {
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @if $code != null {
+    content: $code;
+  }
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+
+  @include icomoon-helper;
+}
+
+.button[class^="icon-"],
+.button[class*=" icon-"] {
+  font-family: inherit;
+  &::before{
+    @include icomoon-helper;
+    margin-right: rem-calc(5px);
+  }
+}
+
+
+// Icon Sizes
+.icon-three-half{
+  font-size: 1.5em;
+   @include until ($tablet)  {
+    font-size: 1.5rem;
+  }
+}
+.icon-2x{
+  font-size: 2em;
+   @include until ($tablet)  {
+    font-size: 2rem;
+  }
+}
+
+.icon-3x{
+  font-size: 3em;
+}
+
+.icon-4x{
+  font-size: 3.5em;
+}
+
+.icon-5x{
+  font-size: 5em;
+}
+
+.icon-12x{
+  font-size: 12em;
+}
+
+
+
+
+.icon-guillemets {
+  &:before {
+    content: $icon-guillemets;
+  }
+}
+.icon-facebook-with-circle {
+  &:before {
+    content: $icon-facebook-with-circle;
+  }
+}
+.icon-twitter-with-circle {
+  &:before {
+    content: $icon-twitter-with-circle;
+  }
+}
+.icon-linkedin-with-circle {
+  &:before {
+    content: $icon-linkedin-with-circle;
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
+.icon-arrowlineL {
+  &:before {
+    content: $icon-arrowlineL;
+  }
+}
+.icon-arrowlineR {
+  &:before {
+    content: $icon-arrowlineR;
+  }
+}
+.icon-arrowlineB {
+  &:before {
+    content: $icon-arrowlineB;
+  }
+}
+.icon-arrowlineT {
+  &:before {
+    content: $icon-arrowlineT;
+  }
+}
+.icon-back {
+  &:before {
+    content: $icon-back;
+  }
+}
+.icon-arrow-r {
+  &:before {
+    content: $icon-arrow-r;
+  }
+}
+.icon-cloud {
+  &:before {
+    content: $icon-cloud;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-brand {
+  &:before {
+    content: $icon-brand;
+  }
+}
+.icon-tweet {
+  &:before {
+    content: $icon-tweet;
+  }
+}
+.icon-social {
+  &:before {
+    content: $icon-social;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-brand1 {
+  &:before {
+    content: $icon-brand1;
+  }
+}
+.icon-social1 {
+  &:before {
+    content: $icon-social1;
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube;
+  }
+}
+.icon-brand2 {
+  &:before {
+    content: $icon-brand2;
+  }
+}
+.icon-social2 {
+  &:before {
+    content: $icon-social2;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-brand3 {
+  &:before {
+    content: $icon-brand3;
+  }
+}
+.icon-social3 {
+  &:before {
+    content: $icon-social3;
+  }
+}
+
+
+
+

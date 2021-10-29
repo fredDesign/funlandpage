@@ -1,0 +1,59 @@
+/*!
+ * Bootstrap v5.1.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/./core/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "./core/functions";
+
+@import "./core/variables";
+//
+// Variable personalisation
+@import "./project_variables";
+//
+
+@import "./core/mixins";
+@import "./core/utilities";
+
+// Layout & components
+@import "./core/root";
+@import "./core/reboot";
+@import "./core/type";
+@import "./core/images";
+@import "./core/containers";
+@import "./core/grid";
+@import "./core/tables";
+@import "./core/forms";
+@import "./core/buttons";
+@import "./core/transitions";
+@import "./core/dropdown";
+@import "./core/button-group";
+@import "./core/nav";
+@import "./core/navbar";
+@import "./core/card";
+@import "./core/accordion";
+@import "./core/breadcrumb";
+@import "./core/pagination";
+@import "./core/badge";
+@import "./core/alert";
+@import "./core/progress";
+@import "./core/list-group";
+@import "./core/close";
+@import "./core/toasts";
+@import "./core/modal";
+@import "./core/tooltip";
+@import "./core/popover";
+@import "./core/carousel";
+@import "./core/spinners";
+@import "./core/offcanvas";
+@import "./core/placeholders";
+
+// Helpers
+@import "./core/helpers";
+
+// Utilities
+@import "./core/utilities/api";
+// scss-docs-end import-stack

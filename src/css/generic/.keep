@@ -1,0 +1,8 @@
+// Build font family class helpers, this is an addon for a missing feature
+// in Bootstrap. Each font family class will be like '.font-NAME'
+$site-fonts: () !default;
+@each $name, $value in $site-fonts {
+    .font-#{$name}{
+        font-family: $value !important;
+    }
+}

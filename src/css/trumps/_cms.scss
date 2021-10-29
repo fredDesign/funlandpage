@@ -1,0 +1,52 @@
+///
+/// Stylesheet trumps to patch DjangoCMS failures.
+///
+/// Depends on:
+///
+/// - Site settings for some variables
+/// - Bootstrap breakpoint functions
+///
+
+$cms-toolbar-height: rem-calc(45px);
+
+// Fix offcanvas mode to place menu correctly when CMS toolbar is present
+.cms-toolbar-expanded{
+    #page-header {
+        // Shift menu according to toolbar height
+        top: $cms-toolbar-height;
+
+        @include media-breakpoint-down(lg) {
+            .offcanvas-collapse {
+                // Shift menu content according to toolbar height and menu
+                top: $cms-toolbar-height + $site-menu-height;
+            }
+        }
+    }
+}
+
+div.cms {
+  .cms-structure {
+    //
+    // Trick to get a larger cms bar column so long plugin titles are more
+    // readable
+    //
+    @include media-breakpoint-up(lg) {
+      &.cms-structure-condensed {
+        width: 30vw;
+      }
+    }
+
+    //
+    // Hack page plugins tree menu to push plugin label on two lines,
+    // one for the plugin class title and one for the plugin object title
+    //
+    .cms-dragitem-text {
+      font-size: 0.8rem;
+      line-height: 1.2;
+
+      strong {
+        display: block;
+      }
+    }
+  }
+}

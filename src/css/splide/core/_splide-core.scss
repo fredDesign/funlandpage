@@ -1,0 +1,33 @@
+//@import 'foundation/*';
+@import './foundation/animations';
+@import './foundation/variables';
+
+//@import 'object/objects/
+@import './object/objects/container';
+@import './object/objects/list';
+@import './object/objects/pagination';
+@import './object/objects/root';
+@import './object/objects/slide';
+@import './object/objects/slider';
+@import './object/objects/spinner';
+@import './object/objects/track';
+
+//@import 'object/modifiers/*';
+@import './object/modifiers/draggable';
+@import './object/modifiers/fade';
+@import './object/modifiers/rtl';
+@import './object/modifiers/ttb';
+
+
+///
+.splide__pagination__page {
+  border: 2px solid $pink;
+  border-radius: 50rem;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.5rem;
+  &.is-active {
+    background: $pink;
+  }
+}
+

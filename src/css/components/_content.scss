@@ -1,0 +1,10 @@
+///
+/// Page main content container
+///
+
+#page-content {
+    // Page container to include space for fixed navigation on desktop mode
+    @include media-breakpoint-up(lg) {
+        padding-top: $site-menu-height;
+    }
+}

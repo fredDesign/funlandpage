@@ -1,0 +1,43 @@
+///
+/// Site colors settings
+///
+
+
+///
+// Color variables
+///
+$custom-color: #900;
+
+///
+// Colors map
+///
+$site-colors: (
+  "custom-color": $custom-color,
+);
+
+///
+// Theme colors to merge in Bootstrap theme colors
+///
+$site-theme: (
+  "custom-color": $custom-color,
+);
+
+
+///
+// Site theme colors to merge in Bootstrap theme colors
+///
+$bb-schemes: (
+    "white": (
+        "font-color": $black,
+        "background": $white,
+    ),
+    "black": (
+        "font-color": $white,
+        "background": $black,
+    ),
+);
+
+///
+// Default scheme to apply on objects which implement schemes
+///
+$bb-schemes-default: "white";

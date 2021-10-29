@@ -1,0 +1,253 @@
+//.navbar-burger
+//
+.navbar-burger {
+  display: block !important;
+}
+.navbar-burger span {
+  height: 2px;
+  width: 30px;
+  left: calc(50% - 15px);
+}
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 8px);
+}
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 6px);
+}
+// Nav slide //
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  //overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  max-height:100vh;
+  max-width: 100vw;
+  a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #EDEDED;
+    display: block;
+    transition: 0.3s;
+  }
+  a:hover {
+    color: #f1f1f1;
+  }
+  > ul {
+    left:-250px;
+    position: relative;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    li {
+      list-style: none;
+      position: relative;
+      &.level-1 {
+        &:hover {
+          background-color: $blue;
+          ul {
+            background-color: $blue;
+          }
+        }
+      }
+      label {
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        width: 2rem;
+        background: #333;
+        border-radius: 0.5rem;
+        transition: all 0.3s;
+        &:hover {
+          cursor:pointer;
+        }
+      }
+      .respAct {
+        display: none;
+      }
+      @include from ($desktop) {
+        label {
+          display: none;
+        }
+        ul {
+          pointer-events: none;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          opacity: 0;
+          .respAct,label {
+            display: none;
+          }
+        }
+      }
+      @include from ($desktop) {
+
+        &:hover {
+          ul {
+          pointer-events:auto;
+            left: 100% !important;
+            opacity: 1;
+            li {
+              a {
+                color:$white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: $matisse;
+  color: white;
+  padding: 10px 15px;
+  //border: 2px solid #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 2px #ffffff00;
+}
+
+.openbtn:hover {
+  background-color: #000;
+  box-shadow: 0 0 2px 2px #fff;
+  color: $white;
+}
+
+.mainCont {
+  transition: margin-left .5s;
+  min-width: 100vw;
+}
+
+//
+
+  .toggle-pane {
+    position: relative;
+    padding: 0.5rem 1rem;
+    background: #212121;
+    font-size: 1.2rem;
+  }
+
+  .pane {
+    z-index: 220;
+    position: fixed;
+    top: unset;
+    right: -460px;
+    padding: 0;
+    height: 100vh;
+    width: 450px;
+    background: white;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.5s all ease;
+    .modal-card {
+      margin:0;
+    }
+    @include until ($tablet) {
+      height: 90vh;
+      margin-top: 5vh;
+      width: 90%;
+      right: -90%;
+    }
+    @include from ($desktop) {
+      right: -800px;
+      width: 780px;
+    }
+    iframe {
+      width:100%;
+      height: 100%;
+      position: relative;
+    }
+    &.is-panactive {
+      right: 0%;
+      @include until ($tablet) {
+        right: 5%;
+      }
+      .clospan {
+        opacity: 0.6;
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        position: fixed;
+        right: 0;
+        top:0;
+        z-index: -1;
+      }
+    }
+
+    .modal-card {
+      width: 100%;
+      height: 100%;
+      .modal-card-head {
+       border-radius: 0;
+      }
+    }
+
+  }
+
+///// burger menu
+.navbar-menu {
+  display: flex !important;
+  @include mobile {
+  flex-grow: 1;
+  flex-shrink: 0;
+  }
+  @include tablet  {
+  flex-grow: 1;
+  flex-shrink: 0;
+  }
+}
+.navbar {
+
+  align-items: stretch;
+  display: flex;
+}
+
+.respAct ~ .submenu {
+  @include until($desktop)  {
+  display: none;
+  }
+}
+.respAct:checked ~ label {
+
+  transform: rotate(
+                  180deg
+  );
+  transition: all 0.3s;
+}
+.respAct:checked ~ .submenu {
+@include until($desktop)  {
+  display:inline-block;
+  position: relative;
+  opacity:1;
+  left:0;
+}
+}

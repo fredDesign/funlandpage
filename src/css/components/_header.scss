@@ -1,0 +1,268 @@
+///
+/// Page header container
+///
+
+// Patch body to avoid horizontal scrolling because of offcanvas translation
+@include media-breakpoint-down(lg) {
+    html,
+    body {
+        // Prevent scroll on narrow devices
+        overflow-x: hidden;
+    }
+    body {
+        // Reserve space for fixed navbar
+        padding-top: $site-menu-height;
+    }
+}
+
+#page-header {
+    // Fix header
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: $gray-900;
+
+    @include media-breakpoint-up(lg) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .navbar-collapse {
+            display: flex;
+            flex-basis: auto;
+        }
+    }
+
+    //
+    // Apply base colors and decorations to components
+    //
+    .navbar-brand {
+        color: $white;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        color: rgba($white, 0.55);
+        border: 0;
+
+        .navbar-toggler-icon {
+            background-image: $navbar-dark-toggler-icon-bg;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+    .navbar-nav {
+        margin-bottom: 0.5rem;
+        color: rgba($white, 0.55);
+
+        // Only the main menu set this and language menu still stick to the right
+        &:first-child {
+            margin-right: auto;
+        }
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            margin-bottom: 0;
+        }
+
+        .nav-link {
+            color: inherit;
+
+            .nav-item {
+                color: inherit;
+            }
+
+            &.active,
+            &:hover {
+                color: $white;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+        }
+
+        .dropdown-menu {
+            color: inherit;
+            background-color: $white;
+
+            @include media-breakpoint-up(lg) {
+                color: $gray-900;
+                position: absolute;
+            }
+
+            .dropdown-item {
+                color: inherit;
+            }
+        }
+    }
+
+    //
+    // Features for navbar with nested dropdown openable on click
+    // (Structural rules only, avoid to set colors here if possible)
+    //
+    .navbar-recursive-click {
+        // Ensure dropdown has no different look than single items
+        .dropdown-item {
+            &.active,
+            &:active {
+                font-weight: bold;
+                background: transparent;
+            }
+
+            &:focus,
+            &:hover {
+                background: transparent;
+            }
+        }
+
+        // Ensure dropdown has no different look than single items
+        .dropdown-menu {
+            .dropdown-item.active,
+            .dropdown-item:active {
+                color: inherit;
+            }
+        }
+
+        // Adjust look for link and toggle-split on first level
+        .nav-item {
+            &.dropdown {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: stretch;
+
+                & > .dropdown-item {
+                    @include bb-flex(1, 0, auto);
+                    width: auto;
+                }
+
+                & > .dropdown-toggle {
+                    @include bb-flex(0, 0, auto);
+                    color: $white;
+                    background: transparent;
+                    border: 0;
+                }
+            }
+        }
+
+        // Adjust look for link and toggle-split on second level and more
+        .dropend {
+            &.dropdown {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: stretch;
+
+                & > .dropdown-item {
+                    @include bb-flex(1, 0, auto);
+                    width: auto;
+                }
+
+                & > .dropdown-toggle {
+                    @include bb-flex(0, 0, auto);
+                    color: inherit;
+                    background: rgba($secondary, 0.1);
+                    border: 0;
+                    border-top-left-radius: 0.4rem;
+                    border-bottom-left-radius: 0.4rem;
+
+                    &::after {
+                        position: relative;
+                        top: -0.1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    //
+    // Adjust navbar and its components on mobile mode to better look like an offcanvas
+    //
+    @include media-breakpoint-down(lg) {
+        .offcanvas-collapse {
+            position: fixed;
+            top: $site-menu-height;
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color: $gray-800;
+            transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+
+            &.open {
+                visibility: visible;
+                transform: translateX(-100%);
+            }
+
+            // Adjust dropdown menu, no matter level they all should look the same
+            .dropdown-item {
+                background: transparent;
+                border: 0;
+            }
+
+            // Adjust dropdown menu, no matter level they all should look the same
+            .dropdown-menu {
+                background: transparent;
+                border: 0;
+            }
+        }
+
+        // Adjust navbar with nested dropdown openable on click
+        .navbar-recursive-click {
+
+            // Adjust look for link and toggle-split on first level
+            .nav-item {
+                &.dropdown {
+                    flex-wrap: wrap;
+
+                    & > .dropdown-item {
+                        @include bb-flex(0, 0, auto);
+                    }
+
+                    & > .dropdown-toggle {
+                        @include bb-flex(0, 0, auto);
+                    }
+
+                    & > .dropdown-menu {
+                        @include bb-flex(1, 0, 100%);
+                        padding-left: 1rem;
+                    }
+                }
+            }
+
+            // Adjust look for link and toggle-split on second level and more
+            .dropend {
+
+                &.dropdown {
+                    flex-wrap: wrap;
+
+                    & > .dropdown-item {
+                        @include bb-flex(0, 0, auto);
+                    }
+
+                    & > .dropdown-toggle {
+                        @include bb-flex(0, 0, auto);
+                        border-radius: 0.4rem;
+                    }
+
+                    & > .dropdown-menu {
+                        @include bb-flex(1, 0, 100%);
+                        padding-left: 1rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
