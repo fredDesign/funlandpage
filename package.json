@@ -58,7 +58,7 @@
     "shufflejs": "^5.4.1",
     "snowpack-plugin-raw-file-loader": "^1.0.9",
     "splitting": "^1.0.6",
-    "swiper": "7.2.0",
+    "swiper": "6.8.0",
     "tiny-emitter": "^2.1.0"
   },
   "nodemonConfig": {
