@@ -17,13 +17,16 @@ Swiper.use([Navigation, Pagination]);
     /**
      * Easy isotope news
      */
+    let shufCont = document.getElementById('isonumb')
+     if (shufCont) {
 
-    const shuffleInstance = new Shuffle(document.getElementById('isonumb'), {
-            itemSelector: '.itemNumb',
-            sizer: ".grid-sizer",
-            buffer: 1,
-            isCentered: true,
-        })
+         const shuffleInstance = new Shuffle(shufCont, {
+             itemSelector: '.itemNumb',
+             sizer: ".grid-sizer",
+             buffer: 1,
+             isCentered: true,
+         })
+     }
 
 
 

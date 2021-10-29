@@ -12,301 +12,159 @@ data: collections.blogposts
 
 {% block contenthere %}
   <main id="main">
-    <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Our Values {{ title }} {{ 'hello' | i18n }}</h2>
-          <p>Odit est perspiciatis laborum et dicta</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-2">
-            <div class="box flex" data-aos="fade-up" data-aos-delay="200">
-                <div class="box-ico"><img src="/static/images/icones/gerer.png" class="img-fluid" alt="">
-              </div>
-                <div class="box-con"><p>Bénéficiez de l’ensemble
-                    des prestations pour
-                    1 copropriété</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 mt-4 mt-lg-0">
-            <div class="box flex" data-aos="fade-up" data-aos-delay="400">
-                <div class="box-ico"><img src="/static/images/icones/visualiser.png" class="img-fluid" alt="">
-              </div>
-                <div class="box-con"><p>Bénéficiez de l’ensemble
-                    des prestations pour
-                    1 copropriété</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 mt-4 mt-lg-0">
-            <div class="box flex" data-aos="fade-up" data-aos-delay="600">
-                <div class="box-ico"><img src="/static/images/icones/communiquer.png" class="img-fluid" alt="">
-              </div>
-                <div class="box-con"><p>Bénéficiez de l’ensemble
-                    des prestations pour
-                    1 copropriété</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 mt-4 mt-lg-0">
-            <div class="box flex" data-aos="fade-up" data-aos-delay="400">
-                <div class="box-ico"><img src="/static/images/icones/commercialiser.png" class="img-fluid" alt="">
-              </div>
-                <div class="box-con"><p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 mt-4 mt-lg-0">
-            <div class="box flex" data-aos="fade-up" data-aos-delay="600">
-                <div class="box-ico"><img src="/static/images/icones/optimiser.png" class="img-fluid" alt="">
-              </div>
-                <div class="box-con"><p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 mt-4 mt-lg-0">
-            <div class="box flex" data-aos="fade-up" data-aos-delay="400">
-                <div class="box-ico"><img src="/static/images/icones/economiser.png" class="img-fluid" alt="">
-              </div>
-                <div class="box-con"><p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="col-md-auto mx-auto align-content-center">
-
-            <div data-aos="fade-up" data-aos-delay="600" class="mx-auto">
-              <div class="text-center text-lg-start">
-                <a href="#about" type="button" class="btn btn-primary scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>S’abonner dés maintenant</span>
-                  <i class="bi bi-arrow-right ms-2"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </section><!-- End Values Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-
-      <div class="container col-9" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2 class="h2">Tarifs</h2>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 align-right">
-              <span>Mensuel</span>
-            </div>
-            <div class="col-md-auto mx-auto align-content-center">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
-              <span>Annuel</span>
-            </div>
-          </div>
-        </header>
-
-        <div class="row gy-6 align-content-lg-stretch" data-aos="fade-left">
-
-          <div class="col-lg-4 col-md-1 align-self-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="box">
-              <h3 style="color: #07d5c0;">Abonnement mini</h3>
-              <ul>
-                <li>Bénéficiez de l’ensemble
-                  des prestations pour
-                  1 copropriété</li>
-                <li>Jusqu’à 30 lots</li>
-                <li>2 GB d’espace disponible</li>
-              </ul>
-              <div class="price"><sup>€</sup>29<span> / par mois</span></div>
-              <a href="#" class="btn btn-primary  full">Buy Now</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-1 align-self-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="box">
-              <span class="featured">Best seller</span>
-              <h3 style="color: #65c600;">Abonnement Pro</h3>
-              <ul>
-                <li>Bénéficiez de l’ensemble
-                  des prestations pour
-                  1 copropriété</li>
-                <li>Jusqu’à 100 lots</li>
-                <li>5 GB d’espace disponible</li>
-              </ul>
-              <div class="price"><sup>€</sup>79<span> / par mois</span></div>
-              <span class="small  text-opacity-50">849€ annuellement. Economisez 100€</span>
-              <a href="#" class="btn btn-secondary  full">Buy Now</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-1 align-self-stretch" data-aos="zoom-in" data-aos-delay="300">
-            <div class="box">
-              <h3 style="color: #ff901c;">Abonnement Premium</h3>
-              <ul>
-                <li>Bénéficiez de l’ensemble
-                  des prestations pour
-                  1 copropriété</li>
-                <li>Jusqu’à 200 lots</li>
-                <li>10 GB d’espace disponible</li>
-              </ul>
-              <div class="price"><sup>€</sup>149<span> / par mois</span></div>
-              <span class="small  text-opacity-50">1639€ annuellement. Economisez 149€</span>
-              <a href="#" class="btn btn-dark  full">Buy Now</a>
-            </div>
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-    </section><!-- End Pricing Section -->
-
-
-    <!-- ======= Newsletter  ======= -->
-
-    <section id="newsletter" class="newsletter">
-      <div class="container col-9" data-aos="fade-up ">
-
-        <hr>
-        <header class="section-header py-3 mt-5">
-        <span class="h5">Recevez des informations sur les actualités et les mises à jour de notre plateforme</span>
-        </header>
-        <div class="row align-content-center mb-5">
-          <form class="row form-inline  justify-content-center">
-            <div class="col-auto">
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <label for="inputPassword2" class="sr-only visually-hidden">Votre email...</label>
-                  <input type="email" class="form-control" id="mail" placeholder="Votre email...">
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
-                </div>
-              </div>
-
-              <div class="row justify-content-center">
-                <div class=" col-auto custom-checkbox my-1 mr-sm-2">
-                  <input type="checkbox" class="custom-control-input" id="customControlInline">
-                  <label class="custom-control-label" for="customControlInline">J’ai lu et accepté les conditions générales du site rentabim</label>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <hr>
-      </div>
-    </section>
-
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-aaa {{ collections.blogposts }}
-      {% set posts = collections.blogposts | limit(6) %}
-      {{ posts.length }}
-      {% for post in posts %}
-        {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--3cols@medium">{% endif %}
-        <li>
-          {% include "partials/blogcard.njk" %}
-        </li>
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
+    <section id="tools" class="tools">
 
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Témoignages</h2>
-          <span class="h5">Ce qu'ils disent de nous</span>
-        </header>
-
+      <div  data-aos="fade-up">
+        <div class="container">
+          <header class="section-header p-0">
+            <span class="h6 text-uppercase">Outils</span>
+            <h2 class="fw-black col-8 m-auto">Développement d'outils d'apprentissage libres et ouverts</h2>
+          </header>
+        </div>
         <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p class="display-6">
-                  Lorem ipsum dolor, vel eum iure illum reprehenderit qui in ea voluptate velit esse quam  molestiae consequatur quia non  modi tempora.
+                <div class="figure">
+                  <img src="/static/images/tools/catalog.png" class="testimonial-img" alt="">
+                </div>
+                <p class="display-6 fw-bold">
+                  Catalogue et place de marché
                 </p>
                 <div class="profile mt-auto">
-                  <img src="/static/images/theme/roseau_test.png" class="testimonial-img" alt="">
+                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p class="display-6">
-                  Lorem ipsum dolor, vel eum iure illum reprehenderit qui in ea voluptate velit esse quam  molestiae consequatur quia non  modi tempora.
+                <div class="figure">
+                  <img src="/static/images/tools/learnapp.png" class="testimonial-img" alt="">
+                </div>
+                <p class="display-6 fw-bold">
+                  Système de gestion d'apprentissage
                 </p>
                 <div class="profile mt-auto">
-                  <img src="/static/images/theme/roseau_test.png" class="testimonial-img" alt="">
+                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p class="display-6">
-                  Lorem ipsum dolor, vel eum iure illum reprehenderit qui in ea voluptate velit esse quam  molestiae consequatur quia non  modi tempora.
+                <div class="figure">
+                  <img src="/static/images/tools/discuss.png" class="testimonial-img" alt="">
+                </div>
+                <p class="display-6 fw-bold">
+                  Gestion de communauté
+                  et communication
                 </p>
                 <div class="profile mt-auto">
-                  <img src="/static/images/theme/roseau_test.png" class="testimonial-img" alt="">
+                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p class="display-6">
-                  Lorem ipsum dolor, vel eum iure illum reprehenderit qui in ea voluptate velit esse quam  molestiae consequatur quia non  modi tempora.
+                <div class="figure">
+                  <img src="/static/images/tools/multimedia.png" class="testimonial-img" alt="">
+                </div>
+                <p class="display-6 fw-bold">
+                  Services
+                  multimédias
                 </p>
                 <div class="profile mt-auto">
-                  <img src="/static/images/theme/roseau_test.png" class="testimonial-img" alt="">
+                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p class="display-6">
-                  Lorem ipsum dolor, vel eum iure illum reprehenderit qui in ea voluptate velit esse quam  molestiae consequatur quia non  modi tempora.
+                <div class="figure">
+                  <img src="/static/images/tools/learning.png" class="testimonial-img" alt="">
+                </div>
+                <p class="display-6 fw-bold">
+                  Learning
+                  Analytics
                 </p>
                 <div class="profile mt-auto">
-                  <img src="/static/images/theme/roseau_test.png" class="testimonial-img" alt="">
+                  <img src="/static/images/tools/apps/richie_white.png" class="testimonial-img" alt="">
                 </div>
               </div>
             </div><!-- End testimonial item -->
 
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination-test"></div>
         </div>
 
       </div>
 
     </section><!-- End Testimonials Section -->
+
+
+
+    <!-- ======= Values Section ======= -->
+    <section id="apps" class="apps">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <span class="h6 text-uppercase">Plateformes</span>
+          <h2>Des plateformes et services
+            d'apprentissage sur mesure</h2>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-12" id="toolsapp">
+
+            <div class="swiper toolsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="slide-app1">Slide 1</div>
+                <div class="swiper-slide" id="slide-app2">Slide 2</div>
+                <div class="swiper-slide" id="slide-app3">Slide 3</div>
+                <div class="swiper-slide" id="slide-app4">Slide 4</div>
+              </div>
+            </div>
+
+            <div id="toolsChoices">
+              <a  id="goto0" class="gototools button filter-active " data-index-number="0">
+                <h4>FUN MOOC</h4>
+                <p><small>
+                    Des cours en ligne pour découvrir, apprendre, progresser et réussir
+                  </small></p>
+              </a>
+              <a  id="goto1" class="gototools button " data-index-number="1">
+                <h4>FUN CAMPUS</h4>
+                <p><small>
+                    Des formations pour enrichir les cursus
+                  </small></p>
+              </a>
+              <a  id="goto2" class="gototools button " data-index-number="2">
+                <h4>FUN Corporate</h4>
+                <p><small>
+                    Informez-vous sur les évolutions du bâtiment durable !
+                  </small></p>
+              </a>
+              <a  id="goto3" class="gototools button " data-index-number="3">
+                <h4>Meeting.education</h4>
+                <p><small>
+                    Des cours en ligne pour découvrir, apprendre, progresser et réussir
+                  </small></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ======= END Values Section ======= -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -320,245 +178,285 @@ aaa {{ collections.blogposts }}
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
-              <h3>Plus d'infos</h3>
-              <h2 class="h1">Une documentaion détaillée</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip .
-              </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <h4>Guides</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-                <div class="col-lg-6">
-                  <h4>Integrations</h4>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                </div>
-              </div>
-              <div class="text-center text-lg-start">
-                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Read More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-    </section><!-- End About Section -->
-
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts my-5">
-
-      <div class="container" data-aos="fade-up">
-
-
-
-        <div class="row">
-
-          <div class="col-lg-4 justify-content-center align-content-center align-self-center ">
-            <h2 class="h1">Nos services
-              sur devis</h2>
-            <p class="h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ncididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="col-lg-8">
-            <div  id="isonews">
-
-              <div class="col-lg-4  mt-5 itemNews">
-                <div class="post-box">
-                  <div class="post-img"><img src="/static/images/random/Bitmap.jpg" class="img-fluid" alt=""></div>
-                  <span class="post-date">Tue, September 15</span>
-                  <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-                  <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4  mt-2 itemNews">
-                <div class="post-box">
-                  <div class="post-img"><img src="/static/images/random/Bitmap.jpg" class="img-fluid" alt=""></div>
-                  <span class="post-date">Fri, August 28</span>
-                  <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                  <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4  itemNews">
-                <div class="post-box">
-                  <div class="post-img"><img src="/static/images/random/Bitmap.jpg" class="img-fluid" alt=""></div>
-                  <span class="post-date">Mon, July 11</span>
-                  <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-                  <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4  itemNews">
-                <div class="post-box">
-                  <div class="post-img"><img src="/static/images/random/Bitmap.jpg" class="img-fluid" alt=""></div>
-                  <span class="post-date">Tue, September 15</span>
-                  <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
-                  <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4  itemNews">
-                <div class="post-box">
-                  <div class="post-img"><img src="/static/images/random/Bitmap.jpg" class="img-fluid" alt=""></div>
-                  <span class="post-date">Fri, August 28</span>
-                  <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
-                  <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4  itemNews">
-                <div class="post-box">
-                  <div class="post-img"><img src="/static/images/random/Bitmap.jpg" class="img-fluid" alt=""></div>
-                  <span class="post-date">Mon, July 11</span>
-                  <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
-                  <a href="blog-singe.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-
+              <span class="h6 text-uppercase">Éthique</span>
+              <h2 class="h2 fw-black text-blue">Une posture éthique et respectueuse de la réglementation, des droits des personnes et de la souveraineté</h2>
+              <ul>
+                <li>Logiciels libres et ouverts</li>
+                <li>RGPD</li>
+                <li>Accessibilité</li>
+                <li>Facilitateur de souveraineté numérique</li>
+              </ul>
 
             </div>
           </div>
 
-
         </div>
+
+        <div class="row gx-5">
+          <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <a href="" target="_blank"><img src="/static/images/theme/ethique1.png" alt=""></a>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <a href="" target="_blank"><img src="/static/images/theme/ethique2.png" alt=""></a>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <a href="" target="_blank"><img src="/static/images/theme/ethique3.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ======= End About Section ======= -->
+
+
+    <!-- ======= Fun by Number  ======= -->
+    <section id="funByNumber" class=" ">
+
+      <div class="container my-5" data-aos="fade-up">
+
+
+
+
+
+
+        <div style="display: none"> {{ collections.blogposts }}
+          {% set posts = collections.blogposts | limit(6) %}
+          {{ posts.length }}
+          {% for post in posts %}
+            {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--3cols@medium">{% endif %}
+            <li>
+              {% include "partials/blogcard.njk" %}
+            </li>
+            {% if loop.last %}</ul>{% endif %}
+          {% endfor %}
+        </div>
+
+
+        <div class="rowby24 gy-2">
+          <div  id="isonumb">
+            <div class="grid-sizer"></div>
+
+            <div class="col-lg-5  mt-5 itemNumb">
+              <span class="h6 text-uppercase">Ressources et communauté</span>
+              <h2 class="h2 fw-black">France Université Numérique en quelques chiffres </h2>
+            </div>
+
+            <div class="col-lg-6  mt-5 itemNumb">
+              <div class="numb-box is-horizontal">
+                <div class="numb-text">
+                  <span class="numb-number">800</span>
+                  <h3 class="numb-title">mille vues de vidéos par mois</h3>
+                </div>
+                <div class="numb-img">
+                  <img src="/static/images/numbers/videos.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-5 mt-2 me-5 itemNumb">
+              <div class="numb-box is-horizontal">
+                <div class="numb-text">
+                  <span class="numb-number">1900</span>
+                  <h3 class="numb-title">sessions de cours</h3>
+                </div>
+                <div class="numb-img">
+                  <img src="/static/images/numbers/sessions.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-xl-5 mt-2 itemNumb">
+              <div class="numb-box is-horizontal">
+                <div class="numb-text">
+                  <span class="numb-number">140</span>
+                  <h3 class="numb-title">Institutions publiques et organisations partenaires</h3>
+                </div>
+                <div class="numb-img">
+                  <img src="/static/images/numbers/institution.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-xl-5  mt-2 itemNumb">
+              <div class="numb-box is-horizontal">
+                <div class="numb-text">
+                  <span class="numb-number">10</span>
+                  <h3 class="numb-title">projets actifs de développement libres et ouverts</h3>
+                </div>
+                <div class="numb-img">
+                  <img src="/static/images/numbers/project.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-xl-3 mt-2 itemNumb">
+              <div class="numb-box is-vertical">
+                <div class="numb-text">
+                  <span class="numb-number">1</span>
+                  <h3 class="numb-title">million d'événements d'apprentissage par jour</h3>
+                </div>
+                <div class="numb-img">
+                  <img style="margin-bottom: -20px;margin-right: -40px;"
+                       src="/static/images/numbers/apprent.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-xl-3   mt-2 itemNumb">
+              <div class="numb-box is-vertical">
+                <div class="numb-text">
+                  <span class="numb-number">9500</span>
+                  <h3 class="numb-title">personnes au sein de la communauté</h3>
+                </div>
+                <div class="numb-img">
+                  <img src="/static/images/numbers/communaute.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-5   mt-2 itemNumb">
+              <div class="numb-box is-horizontal">
+                <div class="numb-text">
+                  <span class="numb-number">3</span>
+                  <h3 class="numb-title">millions d'apprenants </h3>
+                </div>
+                <div class="numb-img">
+                  <img src="/static/images/numbers/learning.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-7 col-xl-5   offset-xl-1 mt-2 itemNumb">
+              <div class="numb-box is-horizontal">
+                <div class="numb-text">
+                  <span class="numb-number">14</span>
+                  <h3 class="numb-title">millions de visites annuelles</h3>
+                </div>
+                <div class="numb-img">
+                  <img src="/static/images/numbers/visit.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
 
       </div>
 
-    </section><!-- End Recent Blog Posts Section -->
+    </section>
+    <!-- ======= End Numbs Section ======= -->
 
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+
+
+
+
+    <!-- ======= usertest Section ======= -->
+    <section id="usertest" class="usertest">
 
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h2>Qui sommes nous</h2>
-          <span class="h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+          <h2>Témoignages</h2>
         </header>
 
-        <div class="row gy-4">
+        <div class="usertest-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="/static/images/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+
+                <div class="profile mt-auto">
+                  <img src="/static/images/usertest/random.jpg" class="testimonial-img" alt="">
+                  <div>
+                    <h3>Saul Goodman</h3>
+                    <h4>Ceo &amp; Founder</h4>
+                  </div>
                 </div>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
               </div>
-              <div class="member-info">
-                <h4>Sylvestre Roseau</h4>
-                <span>Fondateur</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-              </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="/static/images/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+
+                <div class="profile mt-auto">
+                  <img src="/static/images/usertest/random.jpg" class="testimonial-img" alt="">
+                  <div>
+                    <h3>Sara Wilsson</h3>
+                    <h4>Designer</h4>
+                  </div>
                 </div>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
               </div>
-              <div class="member-info">
-                <h4>Melek Ben Ghanem</h4>
-                <span>Fondateur</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="member-img">
-                <img src="/static/images/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+
+                <div class="profile mt-auto">
+                  <img src="/static/images/usertest/random.jpg" class="testimonial-img" alt="">
+                  <div><h3>Jena Karlis</h3>
+                    <h4>Store Owner</h4></div>
                 </div>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
               </div>
-              <div class="member-info">
-                <h4>François Boulais</h4>
-                <span>Ingénieur développeur</span>
-                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
-              </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <div class="member-img">
-                <img src="/static/images/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+
+                <div class="profile mt-auto">
+                  <img src="/static/images/usertest/random.jpg" class="testimonial-img" alt="">
+                  <div><h3>Matt Brandon</h3>
+                    <h4>Freelancer</h4></div>
                 </div>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
               </div>
-              <div class="member-info">
-                <h4>Delphine Cavey</h4>
-                <span>Présidente</span>
-                <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
-              </div>
-            </div>
-          </div>
+            </div><!-- End testimonial item -->
 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-auto">
+                  <img src="/static/images/usertest/random.jpg" class="testimonial-img" alt="">
+                  <div><h3>John Larson</h3>
+                    <h4>Entrepreneur</h4></div>
+                </div>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- End Team Section -->
+    </section><!-- End usertest Section -->
 
-
-
-
-
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients bg-white">
-
-      <div class="py-sm-2 py-md-3 py-lg-5 px-sm-2 px-md-3 px-lg-5  data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Soutenu et
-            accompagné par nos partenaires</h2>
-        </header>
-
-        <div class="clients-slider ">
-          <div class="splide__track" id="splide-track">
-            <ul class="splide__list ">
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-1.png" class="img-fluid" alt=""> </li>
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-2.png" class="img-fluid" alt=""> </li>
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-3.png" class="img-fluid" alt=""> </li>
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-4.png" class="img-fluid" alt=""> </li>
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-5.png" class="img-fluid" alt=""> </li>
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-6.png" class="img-fluid" alt=""> </li>
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-7.png" class="img-fluid" alt=""> </li>
-              <li class="splide__slide swiper-slide"><img src="/static/images/clients/pngegg-8.png" class="img-fluid" alt=""> </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- End Clients Section -->
+    <section id="contact" class="text-center">
+      <h2 class="h1 fw-black mb-5">Contactez-nous</h2>
+      <h3 class="h5 col-8 m-auto mb-5 mt-0 fw-light"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam 🎉</h3>
+      <a href="" class="btn btn-lg btn-info"><span class="text-white">Formulaire pour être recontacté</span></a>
+    </section>
 
 
 
