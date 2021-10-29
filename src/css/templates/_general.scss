@@ -329,7 +329,7 @@ section {
     pointer-events:none;
     left: -125%;
     top: -30%;
-
+    max-height: 80vh;
   }
 }
 
@@ -381,7 +381,7 @@ section {
 # TOOLS
 --------------------------------------------------------------*/
 #tools {
-  background-image: linear-gradient(to bottom, #fefbfb,#fefbfb 90%, #fbfadb);
+  background-image: linear-gradient(to bottom, #fefbfb,#fefbfb 90%, #fff);
 }
 .tools {
 
@@ -476,7 +476,7 @@ section {
 #apps {
   min-height: 900px;
   height: 90vh;
-  background-image: linear-gradient(to bottom ,#FBFBDC, #B8EBDF 90%);
+  background-image: linear-gradient(to top ,#FBFBDC, #fff 90%);
   position: relative;
   &:before {
     content:'';
