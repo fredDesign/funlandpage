@@ -739,76 +739,32 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
-  background: #fff;
+
+
+.tools  .testpag {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: 0.3s;
+  width: 100%;
   justify-content: center;
 }
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 150px;
-  border-radius: 0;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item p {
-  font-weight: 600;
-  margin: 0 auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
+.tools .swiper-pagination-test {
   position: relative;
+  left: auto;
+  margin: auto;
+  margin-top: 4px;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
+.tools .swiper-pagination-test .swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
   opacity: 1;
-  border: 1px solid $pink;
+  margin:0 4px;
+  background: $gray-500;
 }
 
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: $pink;
+.tools .swiper-pagination-test .swiper-pagination-bullet-active {
+  background-color: $cyan;
 }
 
-.testimonials .swiper-slide {
-  transform: scale(0.95);
-  &.swiper-slide-active {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {

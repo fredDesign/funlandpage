@@ -6,10 +6,10 @@ import 'aos';
 import AOS from 'aos';
 import GLightbox from 'glightbox';
 // core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination,Autoplay } from 'swiper';
 
 // configure Swiper to use modules
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination,Autoplay]);
 
  function App() {
     "use strict";
@@ -27,7 +27,6 @@ Swiper.use([Navigation, Pagination]);
              isCentered: true,
          })
      }
-
 
 
      /**
@@ -202,7 +201,7 @@ Swiper.use([Navigation, Pagination]);
          centeredSlides: true,
          autoplay: {
              delay: 5000,
-             disableOnInteraction: false
+             disableOnInteraction: true
          },
          slidesPerView: 1,
          breakpoints: {
@@ -218,6 +217,7 @@ Swiper.use([Navigation, Pagination]);
          pagination: {
              el: '.swiper-pagination-test',
              type: 'bullets',
+             clickable: true
          },
      });
 
