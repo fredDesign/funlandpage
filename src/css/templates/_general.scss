@@ -57,6 +57,7 @@ h2 {
 --------------------------------------------------------------*/
 #main {
   padding-bottom: 0;
+  overflow: hidden;
 
 }
 .main-content .container {
@@ -243,7 +244,11 @@ section {
     }
     .logorf {
       width: 129px;
-      height:113px;
+      max-width: 22vw;
+      height: auto;
+      @include media-breakpoint-up(lg){
+        height:113px;
+      }
     }
     .navbar .level-1  > a, .navbar .level-1  >  a:focus {
       color:$white;
@@ -397,8 +402,13 @@ section {
   .hero h2 {
     font-size: 24px;
   }
-  .hero .hero-img img {
-    width: 100%;
+  .hero .hero-img {
+    height: 100vw;
+    max-height: 390px;
+    margin-top: -80px;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -438,9 +448,29 @@ section {
     align-items: center;
     width: 50vw;
     padding: 3vw;
-    > img {
+    height: 100vw;
+     .figure img {
       max-width: 100%;
     }
+
+    @include media-breakpoint-down(md){
+      .testimonial-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+      }
+       .profile {
+        max-width: 80vw;
+        display: flex;
+        img {
+          width: 25%;
+        }
+      }
+    }
+    @include media-breakpoint-up(md){
+      height: auto;
+    }
+
   }
   .profile  {
     display:flex;
@@ -550,12 +580,13 @@ section {
     display: block;
     position: absolute;
     z-index: 4;
-    width: 100%;
-    height: 100vh;
+    width: 84vw;
+    height: 66vw;
     pointer-events: none;
     background: url('/static/images/tools/tablet.png');
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: contain;
     left: 50%;
     transform: translate(-50%,0);
   }
@@ -594,15 +625,24 @@ section {
 
 }
 #toolsChoices {
-  position: absolute;
+  position: relative;
   top: 50px;
   left: 0;
   z-index: 12;
   width: 100%;
   display: grid;
-  grid-template-columns: [first] 300px [startSlider] auto [stopSlider] 300px [end];
-  grid-template-rows:   [row1-start] 150px [row1-end] 150px [row2-end] auto [last-line];
+  grid-template-columns: [first] 50% [startSlider] auto [stopSlider] 50% [end];
+  grid-template-rows:   [row1-start] auto [row1-end] auto [row2-end] auto [last-line];
   pointer-events: none;
+
+  margin-bottom: 220px;
+
+  @include media-breakpoint-up(md){
+    margin-bottom: auto;
+    position: absolute;
+    grid-template-rows:   [row1-start] 150px [row1-end] 150px [row2-end] auto [last-line];
+  }
+
   > * {
     pointer-events: initial;
   }
@@ -610,6 +650,10 @@ section {
   > a {
     color: $blacked;
     cursor: pointer;
+    padding: 1rem;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
   }
   .filter-active {
     * {
@@ -663,11 +707,12 @@ section {
 
 }
 .toolsSwiper {
-  width: 420px;
-  height: 376px;
   overflow: hidden;
   margin: auto;
-  margin-top: 30px;
+  width: 60vw;
+  height: 35vw;
+  margin: auto;
+  margin-top: 10px;
 
   @include media-breakpoint-up(md){
     width: 400px;
@@ -875,6 +920,9 @@ section {
   display: flex;
   width: 100%;
   justify-content: center;
+  @include media-breakpoint-down(md){
+    margin-top: 2rem;
+  }
 }
 .tools .swiper-pagination-test {
   position: relative;
