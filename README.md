@@ -34,9 +34,14 @@ this script compile src (js & css) in projet/webapp_statics and keep watching th
 
 Build src
 -------------
-this script compile sources , in projet/build one time
+this script compile sources , in projet/build one time by snowpack
 
-    Yarn build 
+    yarn build:bysp
+
+------------------
+this script compile sources , but without snowpack (used by vercel )
+
+    yarn build:bysp
 
 ------------------
 
