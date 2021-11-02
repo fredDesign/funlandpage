@@ -823,6 +823,12 @@ section {
   flex-direction: column;
   text-align: left;
   transition: 0.3s;
+
+  @include media-breakpoint-down(md){
+    margin: 20px 15px;
+    padding: 10px;
+  }
+
   .profile {
     display: flex;
     justify-content: flex-start;
@@ -871,6 +877,10 @@ section {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.75rem;
+  @include media-breakpoint-down(md){
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
 }
 
 .usertest .swiper-pagination {
@@ -1172,6 +1182,11 @@ section {
       display: block;
       line-height: 1;
       margin: 0;
+
+      @include media-breakpoint-down(md){
+        font-size: 56px;
+      }
+
     }
 
     .readmore {
@@ -1203,26 +1218,29 @@ section {
       }
     }
     &.is-horizontal {
+      @include media-breakpoint-up(md){
       height: 210px;
       display: flex;
       flex-direction: row;
       padding: 0;
-      justify-content: space-between;
+      justify-content: space-between;}
       .numb-img {
+        @include media-breakpoint-up(md){
         overflow: initial;
         margin:0;
         position: relative;
         width: 45%;
-
+        }
         @include media-breakpoint-up(xl){
         min-width: 240px;
         text-align: right;
         }
 
         img {
+          @include media-breakpoint-up(md){
           max-width: initial;
           height: 100%;
-          object-fit: initial;
+          object-fit: initial;}
           @include media-breakpoint-up(xl){
             max-width: auto;
             height: calc(100% + 20px);
@@ -1233,8 +1251,10 @@ section {
         }
       }
       .numb-content {
+        @include media-breakpoint-up(md){
         width: 55%;
         padding: 0 16px;
+        }
       }
     }
   }
