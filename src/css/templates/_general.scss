@@ -216,7 +216,9 @@ section {
     img {
       max-height: 100%;
       transition: 0.25s all ease-in-out;
-      width: 100%;
+      @include media-breakpoint-up(md){
+        width: 100%;
+      }
     }
 
   }
@@ -233,8 +235,11 @@ section {
   }
   &:not(.header-scrolled) {
     .logo {
-      width: 313px;
-      height:178 px;
+      @include media-breakpoint-up(lg){
+      width: auto;
+      height:178px;
+        max-height: 16vh;
+      }
     }
     .logorf {
       width: 129px;

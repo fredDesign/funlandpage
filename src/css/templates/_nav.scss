@@ -54,8 +54,13 @@
   justify-content: space-between;
   padding: 10px 0 10px 20px;
   font-weight: 800;
-  white-space: nowrap;
-  transition: 0.3s;}
+  transition: 0.3s;
+  text-align: center;
+      @include media-breakpoint-up(lg) {
+        white-space: nowrap;
+        text-align: left;
+      }
+    }
     &.btn {
       color: #fff;
       box-shadow: 0 0 3px #ccc;
@@ -210,8 +215,14 @@
   }
   a {
     padding: 10px 20px;
-    font-size: 32px;
     color: $white;
+    font-size: 18px;
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+    }
   }
 
    a:hover,  .active, li:hover > a {

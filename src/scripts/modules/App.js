@@ -227,6 +227,40 @@ Swiper.use([Navigation, Pagination,Autoplay]);
      * Clients Slider
      */
 
+     /**
+      * Testimonials slider
+      */
+     new Swiper('.usertest-slider', {
+         speed: 600,
+         loop: true,
+         perPage: 1,
+         centeredSlides: true,
+         autoplay: {
+             delay: 5000,
+             disableOnInteraction: false
+         },
+         slidesPerView: 1,
+         breakpoints: {
+             900: {
+                 slidesPerView: 2,
+                 perPage: 1,
+                 centeredSlides: false,
+             },
+             1200: {
+                 slidesPerView: 3,
+                 perPage: 1,
+                 slidesPerView: "auto",
+                 spaceBetween: 40,
+                 centeredSlides: true,
+             }
+         },
+         pagination: {
+             el: '.swiper-pagination-test',
+             type: 'bullets',
+             clickable: true
+         },
+     });
+
 
     /*/
 
