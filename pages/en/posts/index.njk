@@ -1,6 +1,24 @@
 ---
-  title: Posts
-  layout: layouts/base.njk
+layout: layout.njk
+title: Blog
+data: collections.blogposts
 ---
 
-<h1>{{ title }}</h1>
+
+
+{% block hero %}
+  {% include "partials/hero.njk" %}
+{% endblock %}
+
+{% block contenthere %}
+  <h1>{{ title }}</h1>
+  {% set posts = collections.blogposts | limit(6) %}
+  {{ posts.length }}
+  {% for post in posts %}
+    {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--3cols@medium">{% endif %}
+    <li>
+      {% include "partials/blogcard.njk" %}
+    </li>
+    {% if loop.last %}</ul>{% endif %}
+  {% endfor %}
+{% endblock %}

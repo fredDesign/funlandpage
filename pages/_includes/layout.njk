@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Fun Page
 ---
 
 <!DOCTYPE html>
@@ -38,8 +38,8 @@ title: Hello World
         <img src="/static/images/logo.png" alt="">
       </a>
     </div>
-
-    {% include "nav.njk" %}
+    >
+    {% include "partials/nav.njk" %}
 
 
   </div>
@@ -62,37 +62,8 @@ title: Hello World
 
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer bg-white">
-
-    <div class="footer-top my-5">
-      <div class="container my-5">
-        <div class="row gy-4 align-items-center">
-          <div class="col-md-12  col-lg-5 footer-info d-flex align-items-center justify-content-start">
-            <a href="/" class="logo d-flex align-items-center">
-              <img src="/static/images/logo.png" alt="">
-            </a>
-            <div>
-              {% include 'partials/language-selector.njk' %}
-            </div>
-          </div>
-
-
-
-          <div class="col-lg-7 col-6 footer-links">
-            <ul class="navbar  navbar-menu justify-content-end">
-              <li> <a href="#">Home</a></li>
-              <li> <a href="#">About us</a></li>
-              <li> <a href="#">Services</a></li>
-              <li> <a href="#">Terms of service</a></li>
-              <li> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </footer><!-- End Footer -->
+{% include "partials/footer.njk" %}
+  
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
