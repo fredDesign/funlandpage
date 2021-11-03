@@ -8,6 +8,10 @@ module.exports = {
     'en': 'Select language',
     'fr': 'Choisir votre langue'
   },
+  current_language: {
+    'en': 'English',
+    'fr': 'Français'
+  },
 
   // Greetings
   hello: {
@@ -199,6 +203,13 @@ module.exports = {
     'en': 'Testimonials',
     'fr': 'Témoignages'
   },
+
+  //
+  Testimonials: {
+    'en': 'Legal mentions',
+    'fr': 'Mentions Légales'
+  },
+
 
   //
   posts: {

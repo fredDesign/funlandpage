@@ -1,11 +1,16 @@
 {# Is this ludicrous or crafty? #}
-{% set pageUrl = page.url.split('/').slice(2).join('/') %}
 
-{% if locales.length %}
-  <p>{{ 'select_language' | i18n }}:</p>
-  <ul>
-    {% for locale in locales -%}
-      <li><a href="/{{ locale.code }}/{{ pageUrl }}" rel="alternate" hreflang="{{ locale.code }}">{{ locale.label }}</a></li>
-    {% endfor -%}
-  </ul>
-{% endif %}
+{% set pageUrl = page.url.split('/').slice(2).join('/') %}
+  <div class="text-center d-flex m-auto align-items-center justify-content-center my-2">
+    <div class="dropdown ">
+      <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+        {{ 'select_language' | i18n }}
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><a class="dropdown-item link-dark" href="/fr/{{ pageUrl }}" rel="alternate" hreflang="fr">Francais</a></li>
+        <li><a class="dropdown-item link-dark" href="/en/{{ pageUrl }}" rel="alternate" hreflang="en">English</a></li>
+      </ul>
+    </div>
+  </div>
+
+

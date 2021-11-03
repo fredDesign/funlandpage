@@ -2,6 +2,7 @@ const moment = require("moment");
 const now = new Date();
 const i18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/i18n');
+const locales = require('./src/_data/locales');
 
 module.exports = function (eleventyConfig) {
     // Plugins i18n

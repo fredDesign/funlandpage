@@ -4,7 +4,6 @@ import 'bootstrap';
 import Shuffle from 'shufflejs';
 import 'aos';
 import AOS from 'aos';
-import GLightbox from 'glightbox';
 // core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination,Autoplay } from 'swiper';
 
@@ -297,12 +296,7 @@ Swiper.use([Navigation, Pagination,Autoplay]);
 
     });
 
-    /**
-     * Initiate portfolio lightbox
-     */
-    const portfolioLightbox = GLightbox({
-        selector: '.portfokio-lightbox'
-    });
+
 
 
 
