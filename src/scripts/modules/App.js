@@ -1,13 +1,10 @@
 
 
-import Popper from 'bootstrap/js/dist/popover';
 import Bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 import Shuffle from 'shufflejs';
 import AOS from 'aos';
-// core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination,Autoplay } from 'swiper';
 
-// configure Swiper to use modules
 Swiper.use([Navigation, Pagination,Autoplay]);
 
  function App() {
@@ -191,7 +188,7 @@ Swiper.use([Navigation, Pagination,Autoplay]);
         }
     });
      /**
-      * Testimonials slider
+      * Tools slider
       */
      new Swiper('.testimonials-slider', {
          speed: 600,
