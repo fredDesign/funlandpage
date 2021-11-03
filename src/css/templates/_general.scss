@@ -1173,6 +1173,13 @@ section {
       font-weight: 200;
       position: relative;
       transition: 0.3s;
+      @include media-breakpoint-down(md){
+        text-align: center;
+        font-size: 5vw;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 6.5vw;
+      }
     }
 
     .numb-number {
@@ -1184,7 +1191,11 @@ section {
       margin: 0;
 
       @include media-breakpoint-down(md){
-        font-size: 56px;
+        text-align: center;
+        font-size: 15vw;
+      }
+      @include media-breakpoint-down(sm){
+        font-size: 19vw;
       }
 
     }
