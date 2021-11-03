@@ -1,5 +1,12 @@
 {
   "dir": "ltr",
   "lang": "fr",
-  "locale": "fr"
+  "locale": "fr",
+  "site": {
+    "authorTwitter": "twitter auteur",
+    "url": "url de la page",
+    "title": "votre titre de page",
+    "description": "votre description",
+    "metaImage": "lienversvotreimage"
+  }
 }

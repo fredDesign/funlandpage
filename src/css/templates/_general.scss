@@ -211,7 +211,7 @@ section {
     .logorf {
       width: 129px;
       max-width: 22vw;
-      height: auto;
+      height: 56px;
       @include media-breakpoint-up(lg){
         height:113px;
       }
@@ -567,7 +567,11 @@ section {
     transform: translate(-50%,0);
   }
   .swiper-slide {
-    text-indent: -300000px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 6%;
   }
 
   @include media-breakpoint-up(md){
@@ -746,13 +750,13 @@ section {
 }
 
 #slide-app2 {
-  background: url('/static/images/tools/mooc.jpg');
+  background-image: url('/static/images/tools/corp.jpg');
 }
 #slide-app3{
-  background: url('/static/images/tools/mooc.jpg');
+  background-image: url('/static/images/tools/campus.jpg');
 }
 #slide-app4 {
-  background: url('/static/images/tools/mooc.jpg');
+  background-image: url('/static/images/tools/meet.jpg');
 }
 
 /*--------------------------------------------------------------

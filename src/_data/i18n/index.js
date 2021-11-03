@@ -117,19 +117,19 @@ module.exports = {
   },
   Numbers_events: {
     'en': 'learning events/day',
-    'fr': 'million d\'événements d\'apprentissage par jour'
+    'fr': 'd\'événements d\'apprentissage par jour'
   },
   Numbers_people: {
     'en': 'people in the Community',
     'fr': 'personnes au sein de la communauté'
   },
   Numbers_learner: {
-    'en': 'million learners',
-    'fr': 'millions d\'apprenants'
+    'en': 'learners',
+    'fr': 'd\'apprenants'
   },
   Numbers_visit: {
     'en': 'annual visits ',
-    'fr': 'millions de visites annuelles'
+    'fr': 'de visites annuelles'
   },
 
   /// APPS
@@ -173,6 +173,10 @@ module.exports = {
   App_meetText: {
     'en': 'notext',
     'fr': 'Des cours en ligne pour découvrir, apprendre, progresser et réussir'
+  },
+  App_goto: {
+    'en': 'Go to website',
+    'fr': 'Voir le site web'
   },
 
   //Contact

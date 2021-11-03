@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'eleventy-plugin-i18n',
-  description: 'Eleventy plugin to assist with dictionary translations',
-  url: 'https://github.com/adamduncan/eleventy-plugin-i18n',
+  title: 'Fun',
+  description: 'Fun',
+  url: 'https://www.funland.com',
   buildTime: new Date()
 };

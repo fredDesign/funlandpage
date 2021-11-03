@@ -14,7 +14,6 @@ module.exports = function (eleventyConfig) {
 
     // Browsersync
     // Redirect from root to default language root during --serve
-    // Can also be handled by netlify.toml?
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {
             ready: function (err, bs) {
@@ -30,23 +29,7 @@ module.exports = function (eleventyConfig) {
         }
     });
 
-    // published items
-    // - don't have draft key set to true
-    // - have a date smaller or equal to now
-    const isPublished = (item) => {
-        return item.data.draft !== true && item.date <= now;
-    };
-    // blogposts collection
-    eleventyConfig.addCollection("blogposts", function(collection) {
-        return collection
-            .getFilteredByGlob("pages/blogposts/*.md")
-            .reverse();
-    });
 
-    // limit filter
-    eleventyConfig.addFilter("limit", function(array, limit) {
-        return array.slice(0, limit);
-    });
 
     // date filter
     eleventyConfig.addFilter("date", function(date, format, locale) {
