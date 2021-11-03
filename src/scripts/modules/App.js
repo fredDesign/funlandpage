@@ -1,6 +1,8 @@
 
 
 import 'bootstrap';
+import { Tooltip, Toast, Popover, Dropdown } from 'bootstrap';
+import Dropdown from 'bootstrap/js/dist/dropdown';
 import Shuffle from 'shufflejs';
 import 'aos';
 import AOS from 'aos';
