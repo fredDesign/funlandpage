@@ -74,6 +74,9 @@ section {
   padding-bottom: 40px;
   z-index: 10;
   position: relative;
+  @include media-breakpoint-down(sm){
+    padding-bottom: 20px;
+  }
   h2 {
     font-weight: 900;
   }
@@ -94,57 +97,6 @@ section {
     font-size: 28px;
     line-height: 32px;
   }
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: $primary;
-  min-height: 40px;
-  margin-top: 82px;
-  color: #fff;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 57px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol a {
-  color: #fff;
-  transition: 0.3s;
-}
-
-.breadcrumbs ol a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: $yellow-100;
-  content: "/";
 }
 
 /*--------------------------------------------------------------
@@ -769,6 +721,15 @@ section {
   background-position: center center;
 }
 
+#slide-app2 {
+  background: url('/static/images/tools/mooc.jpg');
+}
+#slide-app3{
+  background: url('/static/images/tools/mooc.jpg');
+}
+#slide-app4 {
+  background: url('/static/images/tools/mooc.jpg');
+}
 
 /*--------------------------------------------------------------
 # Counts
@@ -843,6 +804,9 @@ section {
     padding: 10px;
   }
 
+  @include media-breakpoint-down(sm){
+    min-height: auto;
+  }
   .profile {
     display: flex;
     justify-content: flex-start;
