@@ -1,10 +1,8 @@
 
 
-import 'bootstrap';
-import { Tooltip, Toast, Popover } from 'bootstrap';
-import Dropdown from 'bootstrap/js/dist/dropdown';
+import Popper from 'bootstrap/js/dist/popover';
+import Bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 import Shuffle from 'shufflejs';
-import 'aos';
 import AOS from 'aos';
 // core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination,Autoplay } from 'swiper';
