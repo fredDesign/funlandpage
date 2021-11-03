@@ -674,6 +674,20 @@ section {
   #goto3 {
     grid-area: row1-end / stopSlider / row2-end / end;;
   }
+  @include media-breakpoint-down(sm) {
+    top: 30px;
+    display: block;
+    a > p {
+      display: none;
+    }
+    a {
+      padding: 0;
+      text-align: center !important;
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
   @include media-breakpoint-up(md) {
     grid-template-columns:
             [first] calc((100vw - 440px) / 2) [startSlider] 440px [stopSlider] calc((100vw - 440px) / 2) [end];
