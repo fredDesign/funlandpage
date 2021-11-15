@@ -1,6 +1,13 @@
 {
   "dir": "ltr",
   "lang": "en",
-  "hello": "testit",
-  "locale": "en"
+  "locale": "en",
+  "site": {
+    "keywords": "mot1, mot2 , etc",
+    "authorTwitter": "@funmooc",
+    "url": "https://www.funland.com",
+    "title": "France Université Numérique - Se former en liberté",
+    "description": "Découvrez les activités de France Université Numérique (FUN) qui fédère un réseau pour co-construire des services numériques innovants et souverains, pour l'éducation.",
+    "metaImage": "http://www.france-universite-numerique.fr/fr/vignettefr.jpg”"
+  }
 }

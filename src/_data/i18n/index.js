@@ -29,7 +29,7 @@ module.exports = {
     'fr': 'Co-construire des services numériques innovants pour l\'éducation\n'
   },
   Reade_more: {
-    'en': 'Reade more',
+    'en': 'Read more',
     'fr': 'En savoir plus'
   },
   undertitle1: {
@@ -151,7 +151,7 @@ module.exports = {
     'fr': 'Plateformes'
   },
   App_title: {
-    'en': 'Tailored Learning Platforms & Services',
+    'en': 'Tailored learning platforms & services',
     'fr': 'Des plateformes et services d\'apprentissage sur mesure'
   },
   App_mooc: {
