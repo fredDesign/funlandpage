@@ -23,6 +23,37 @@ module.exports = {
     'fr': 'Bonjour {{ name }}!'
   },
 
+  //nav
+
+  section0: {
+    'en': 'About us',
+    'fr': 'Présentation'
+  },
+  section1: {
+    'en': 'Handcrafting opensource learning tools',
+    'fr': 'Développement d\'outils d\'apprentissage libres et ouverts'
+  },
+  section2: {
+    'en': 'Tailored learning platforms & services',
+    'fr': 'Des plateformes et services d\'apprentissage sur mesure'
+  },
+  section3: {
+    'en': 'An ethical and respectful posture',
+    'fr': 'Une posture éthique et respectueuse'
+  },
+  section4: {
+    'en': 'France Université Numérique in figures',
+    'fr': 'France Université Numérique en quelques chiffres'
+  },
+  section5: {
+    'en': 'Testimonials',
+    'fr': 'Témoignages'
+  },
+  section6: {
+    'en': 'Contact us',
+    'fr': 'Contactez-nous'
+  },
+
   // section 1
   title1: {
     'en': 'Collaboratively Building Innovative Digital Learning Services',
