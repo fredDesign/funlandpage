@@ -28,6 +28,10 @@ module.exports = {
     'en': 'Collaboratively Building Innovative Digital Learning Services',
     'fr': 'Co-construire des services numériques innovants pour l\'éducation\n'
   },
+  Reade_more: {
+    'en': 'Reade more',
+    'fr': 'En savoir plus'
+  },
   undertitle1: {
     'en': 'We federate a network of universities, research labs, government agencies, edtech\n' +
         'companies and individuals dedicated to building great and sovereign digital services\n' +
@@ -55,7 +59,7 @@ module.exports = {
   },
   Tools_Gestion: {
     'en': 'Collaboration Tools',
-    'fr': 'Gestion de communauté et communication'
+    'fr': 'Outils de communication et de gestion de communauté'
   },
   Tools_Services: {
     'en': 'Media Services',
@@ -96,8 +100,8 @@ module.exports = {
   //Numbers
 
   Numbers_subtitle: {
-    'en': 'no title',
-    'fr': 'Ressources et communauté'
+    'en': 'Overview',
+    'fr': 'Panorama'
   },
   Numbers_title: {
     'en': 'France Université Numérique in figures',
@@ -105,7 +109,7 @@ module.exports = {
   },
   Numbers_views: {
     'en': 'videos views per month',
-    'fr': 'mille vues de vidéos par mois'
+    'fr': 'vues de vidéos par mois'
   },
   Numbers_sessions: {
     'en': 'course sessions',
@@ -135,6 +139,10 @@ module.exports = {
     'en': 'annual visits ',
     'fr': 'de visites annuelles'
   },
+  Numbers_inscr: {
+    'en': 'enrollments',
+    'fr': 'd\'inscriptions'
+  },
 
   /// APPS
 
@@ -143,8 +151,8 @@ module.exports = {
     'fr': 'Plateformes'
   },
   App_title: {
-    'en': 'Tailored Learning Platforms & Services ',
-    'fr': 'Des plateformes et services d apprentissage sur mesure'
+    'en': 'Tailored Learning Platforms & Services',
+    'fr': 'Des plateformes et services d\'apprentissage sur mesure'
   },
   App_mooc: {
     'en': 'FUN MOOC',
@@ -159,7 +167,7 @@ module.exports = {
     'fr': 'FUN CAMPUS'
   },
   App_campusText: {
-    'en': 'notext',
+    'en': 'Online courses to enrich curricula',
     'fr': 'Des formations pour enrichir les cursus'
   },
   App_corp: {
@@ -167,16 +175,16 @@ module.exports = {
     'fr': 'FUN Corporate'
   },
   App_corpText: {
-    'en': 'notext',
-    'fr': 'Informez-vous sur les évolutions du bâtiment durable !'
+    'en': 'Online training to develop skills!',
+    'fr': 'Des formations pour développer les compétences !'
   },
   App_meet: {
     'en': 'Meeting.education',
     'fr': 'Meeting.education'
   },
   App_meetText: {
-    'en': 'notext',
-    'fr': 'Des cours en ligne pour découvrir, apprendre, progresser et réussir'
+    'en': 'An open video conferencing service for small group distance learning',
+    'fr': 'Un service de visio-conférence ouvert pour l\'enseignement à distance en petit groupe  '
   },
   App_goto: {
     'en': 'Go to website',
@@ -190,8 +198,8 @@ module.exports = {
     'fr': 'Contactez-nous'
   },
   Contact_text: {
-    'en': 'text english contact',
-    'fr': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam 🎉'
+    'en': 'You have a broadcasting project? You would like to become a member or partner? You would like to contribute to the developments? You want to train your employees or prospects?',
+    'fr': 'Vous avez un projet de diffusion ? Votre aimeriez devenir membre ou partenaire ? vous souhaitez contribuer aux développements ? Vous voulez former vos salariés ou vos prospects ?'
   },
   Contact_button: {
     'en': 'Contact Form',
@@ -205,7 +213,7 @@ module.exports = {
   },
 
   //
-  Testimonials: {
+  Legal_mentions: {
     'en': 'Legal mentions',
     'fr': 'Mentions Légales'
   },
