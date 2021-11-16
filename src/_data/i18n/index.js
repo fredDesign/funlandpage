@@ -140,7 +140,7 @@ module.exports = {
   },
   Numbers_views: {
     'en': 'videos views per month',
-    'fr': 'vues de vidéos par mois'
+    'fr': 'vidéos vues par mois'
   },
   Numbers_sessions: {
     'en': 'course sessions',
