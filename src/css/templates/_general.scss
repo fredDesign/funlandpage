@@ -461,7 +461,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
+#about {
+  z-index: 10;
+}
 .about  {
   position: relative;
   background-image: linear-gradient(to bottom, #F7F7F7 ,#F7F7F7 10%, #EBEEF4 65%);
@@ -473,6 +475,11 @@ section {
   }
 
   h2 {
+    &.h2rem {
+      @include media-breakpoint-up(md){
+      font-size: 2.6rem !important;letter-spacing: -0.75px;
+      }
+    }
   }
 
  p {

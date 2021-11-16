@@ -109,7 +109,7 @@ module.exports = {
   },
   about_title: {
     'en': 'An ethical and respectful posture towards regulations, rights and sovereignty',
-    'fr': 'Une posture éthique et respectueuse de la réglementation, des droits des personnes et de la souveraineté'
+    'fr': 'Une démarche éthique, respectueuse de la réglementation et des enjeux de souveraineté'
   },
   about_software: {
     'en': 'Open source',
