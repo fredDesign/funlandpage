@@ -225,16 +225,16 @@ module.exports = {
   //Contact
 
   Contact: {
-    'en': 'Contact us',
-    'fr': 'Contactez-nous'
+    'en': 'You have a project?',
+    'fr': 'Vous avez un projet ?'
   },
   Contact_text: {
     'en': 'You have a broadcasting project? You would like to become a member or partner? You would like to contribute to the developments? You want to train your employees or prospects?',
     'fr': 'Vous avez un projet de diffusion ? Votre aimeriez devenir membre ou partenaire ? vous souhaitez contribuer aux développements ? Vous voulez former vos salariés ou vos prospects ?'
   },
   Contact_button: {
-    'en': 'Contact Form',
-    'fr': 'Formulaire pour être recontacté'
+    'en': 'Contact us',
+    'fr': 'Contactez-nous'
   },
 
   //
