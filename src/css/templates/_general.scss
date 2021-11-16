@@ -921,7 +921,7 @@ section {
 }
 
 @media (min-width: 1200px) {
-  .usertest .swiper-slide-next {
+  .usertest .swiper-slide-active {
     opacity: 1;
     transform: scale(1.12);
   }
@@ -945,6 +945,8 @@ section {
   left: auto;
   margin: auto;
   margin-top: 4px;
+  display: flex;
+  justify-content: center;
 }
 
 .tools .swiper-pagination-test .swiper-pagination-bullet {
