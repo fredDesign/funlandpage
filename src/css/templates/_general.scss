@@ -438,6 +438,9 @@ section {
        .profile {
         max-width: 80vw;
         display: flex;
+         > a {
+           max-width: 35%;
+         }
         img {
           width: 80%;
         }
