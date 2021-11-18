@@ -585,14 +585,6 @@ section {
     padding-bottom: 6%;
     flex-direction: column;
 
-    @include media-breakpoint-up(md){
-
-      flex-direction: row;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-      padding-bottom: 6%;
-    }
   }
 
   @include media-breakpoint-up(md){
