@@ -210,8 +210,12 @@ module.exports = {
     'fr': 'Des formations pour développer les compétences !'
   },
   App_meet: {
-    'en': 'Meeting.education',
-    'fr': 'Meeting.education'
+    'en': 'Meeting.',
+    'fr': 'Meeting.'
+  },
+  App_education: {
+    'en': 'education',
+    'fr': 'education'
   },
   App_meetText: {
     'en': 'An open video conferencing service for small group distance learning',
