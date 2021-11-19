@@ -24,6 +24,8 @@ After this step you just have to launch
 
 ------------------
 
+------------------
+
 Watch src 
 -------------
 this script compile src (js & css) in projet/webapp_statics and keep watching the modifications
@@ -39,9 +41,12 @@ this script compile sources , in projet/build one time by snowpack
     yarn build:bysp
 
 ------------------
+
+Build for Vercel
+-------------
 this script compile sources , but without snowpack (used by vercel )
 
-    yarn build:bysp
+    yarn build
 
 ------------------
 
