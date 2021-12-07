@@ -50,7 +50,6 @@ module.exports = {
   },
 
   //nav
-
   section0: {
     en: "About us",
     fr: "Présentation",
@@ -64,8 +63,8 @@ module.exports = {
     fr: "Des plateformes et services d'apprentissage sur mesure",
   },
   section3: {
-    en: "An ethical and respectful posture",
-    fr: "Une posture éthique et respectueuse",
+    en: "An ethical and respectful approach",
+    fr: "Une démarche éthique et respectueuse",
   },
   section4: {
     en: "France Université Numérique in figures",
@@ -135,7 +134,7 @@ module.exports = {
     fr: "Éthique",
   },
   about_title: {
-    en: "An ethical and respectful posture towards regulations, rights and sovereignty",
+    en: "An ethical and respectful approach towards regulations, rights and sovereignty",
     fr: "Une démarche éthique, respectueuse de la réglementation et des enjeux de souveraineté",
   },
   about_software: {
