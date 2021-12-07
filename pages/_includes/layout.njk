@@ -3,19 +3,19 @@ title: Fun Page
 ---
 
 <!DOCTYPE html>
-<html lang="{{ locale }}" dir="{{ dir }}">
+<html lang="{{ 'html_locale' | i18n }}" dir="{{ 'html_dir' | i18n }}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ metaTitle ~ " - " if metaTitle }}{{ site.title }}</title>
-  <meta name="description" content="{{ metaDescription if metaDescription else site.description }}">
+  <title>{{ 'head_title' | i18n }}</title>
+  <meta name="description" content="{{ 'head_description' | i18n }}">
   <!-- Open Graph + Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="{{ site.authorTwitter }}">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:title" content="{{ metaTitle ~ ' - ' if metaTitle }}{{ site.title }}">
-  <meta property="og:description" content="{{ metaDescription if metaDescription else site.description }}">
-  <meta property="og:image" content="{{ metaImage if metaImage else site.metaImage }}">
+  <meta name="twitter:creator" content="@funmooc">
+  <meta property="og:url" content="{{ 'head_url' | i18n }}">
+  <meta property="og:title" content="{{ 'head_title' | i18n }}">
+  <meta property="og:description" content="{{ 'head_description' | i18n }}">
+  <meta property="og:image" content="{{ 'head_meta_image' | i18n }}">
 
   <!-- Apple icon (minimal) -->
   <link rel="shortcut icon" href="/static/images/favicon.ico">

@@ -8,28 +8,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(i18n, {
         translations,
         fallbackLocales: {
-            '*': 'en'
+            '*': 'fr'
         }
     });
-
-    // Browsersync
-    // Redirect from root to default language root during --serve
-    eleventyConfig.setBrowserSyncConfig({
-        callbacks: {
-            ready: function (err, bs) {
-                bs.addMiddleware('*', (req, res) => {
-                    if (req.url === '/') {
-                        res.writeHead(302, {
-                            location: '/en/'
-                        });
-                        res.end();
-                    }
-                });
-            }
-        }
-    });
-
-
 
     // date filter
     eleventyConfig.addFilter("date", function(date, format, locale) {

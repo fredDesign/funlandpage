@@ -1,13 +1,5 @@
 {
   "dir": "ltr",
   "lang": "en",
-  "locale": "en",
-  "site": {
-    "keywords": "mot1, mot2 , etc",
-    "authorTwitter": "@funmooc",
-    "url": "https://www.funland.com",
-    "title": "France Université Numérique – The freedom to study",
-    "description": "Collaboratively building innovative digital learning services. Here is the access to all our projects",
-    "metaImage": "http://www.france-universite-numerique.fr/fr/vignettefr.jpg”"
-  }
+  "locale": "en"
 }
