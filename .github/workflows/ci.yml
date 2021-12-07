@@ -1,0 +1,44 @@
+name: Funlandpage CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1.4.4
+      with:
+        node-version: '14'
+    - name: Install dependenciess & run the build
+      run: |
+        yarn install --frozen-lockfile
+        yarn build
+    - name: Create the deployment directory copy the git repo there & checkout the deployment branch
+      run: |
+        mkdir ../deployment
+        cp -R .git ../deployment
+        cd ../deployment
+        git fetch
+        git checkout pages-deployment
+    - name: Clean the deployment directory & copy the build results
+      run: |
+        rm -rf ../deployment/*
+        cp -R build/* ../deployment
+        echo www.france-universite-numerique.fr > ../deployment/CNAME
+    - name: Deploy the build artifact to Github Pages by pushing on the deployment branch
+      run: |
+        cd ../deployment
+        git config user.email "funmoocbot@users.noreply.github.com"
+        git config user.name "FUN MOOC bot"
+        git add --all
+        git commit --allow-empty -m "Deploy to Github Pages"
+        git push origin pages-deployment
