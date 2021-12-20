@@ -4,19 +4,10 @@ barbaTitle: Home
 title: Fun
 ---
 
-<script>
-  // Redirect users who do not have french in their navigator language to the english version.
-  if (
-    window.navigator &&
-    window.navigator.languages &&
-    window.navigator.languages.filter(
-      function (language) {
-        return language.indexOf("fr") !== -1;
-      }
-    ).length == 0) {
-      document.location = document.location.protocol + '//' + document.location.host + '/en/';
-    }
-</script>
+{% block head %}
+  <!-- Duplicate french homepage needs noindex to avoid duplicate content in search engines. -->
+  <meta name="robots" content="noindex">
+{% endblock %}
 
 {% block hero %}
   {% include "partials/hero.njk" %}
