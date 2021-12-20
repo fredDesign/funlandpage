@@ -14,10 +14,14 @@
   <meta property="og:description" content="Découvrez les activités de France Université Numérique (FUN) qui fédère un réseau pour co-construire des services numériques innovants et souverains, pour l&#39;éducation.">
   <meta property="og:image" content="http://www.france-universite-numerique.fr/fr/vignettefr.jpg">
 
+  
+
+  
+
   <!-- Apple icon (minimal) -->
   <link rel="shortcut icon" href="/static/images/favicon.ico">
   <!-- CSS -->
-    <link rel="stylesheet" href="/static/css/main.css?ref=1639999190">
+  <link rel="stylesheet" href="/static/css/main.css?ref=1640011112">
 </head>
 
 <body data-barba="wrapper">
@@ -66,6 +70,20 @@
 
   
     
+<script>
+  // Redirect users who do not have french in their navigator language to the english version.
+  if (
+    window.navigator &&
+    window.navigator.languages &&
+    window.navigator.languages.filter(
+      function (language) {
+        return language.indexOf("fr") !== -1;
+      }
+    ).length == 0) {
+      document.location = document.location.protocol + '//' + document.location.host + '/en/';
+    }
+</script>
+
 
   
     <!-- ======= Hero Section ======= -->
@@ -617,7 +635,7 @@
         Choisir votre langue
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <li><a class="dropdown-item link-dark" href="/" rel="alternate" hreflang="fr">Francais</a></li>
+        <li><a class="dropdown-item link-dark" href="/fr/" rel="alternate" hreflang="fr">Francais</a></li>
         <li><a class="dropdown-item link-dark" href="/en/" rel="alternate" hreflang="en">English</a></li>
       </ul>
     </div>
@@ -654,6 +672,6 @@
   }
 </script>
 
-<script type="module" src="/static/scripts/index.js?ref=1639999190"></script>
+<script type="module" src="/static/scripts/index.js?ref=1640011112"></script>
 
 </html>
