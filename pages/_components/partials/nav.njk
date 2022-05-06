@@ -1,13 +1,20 @@
 <nav id="navbar" class="navbar">
+    <a class="d-none d-lg-block btn-emphasized btn btn-sm me-3" href="{{ 'news_href' | i18n }}">{{ 'news' | i18n }}</a>
     <ul>
         <li><a class="nav-link scrollto " href="#hero"><span>{{ 'section0' | i18n }}</span></a></li>
-                    <li><a class="nav-link scrollto " href="#tools"><span>{{ 'section1' | i18n }}</span></a></li>
-                    <li><a class="nav-link scrollto" href="#apps"><span>{{ 'section2' | i18n }}</span></a></li>
-                    <li><a class="nav-link scrollto" href="#about"><span>{{ 'section3' | i18n }}</span> </a></li>
-                    <li><a class="nav-link scrollto" href="#funByNumber"><span>{{ 'section4' | i18n }}</span></a></li>
-                    <li style="display:none;"><a class="nav-link scrollto" href="#usertest"><span>{{ 'section5' | i18n }}</span></a></li>
-                    <li><a class="nav-link scrollto" href="#contact"><span>{{ 'section6' | i18n }}</span></a></li>
-                    </ul>
+        <li><a class="nav-link scrollto " href="#tools"><span>{{ 'section1' | i18n }}</span></a></li>
+        <li><a class="nav-link scrollto" href="#apps"><span>{{ 'section2' | i18n }}</span></a></li>
+        <li><a class="nav-link scrollto" href="#about"><span>{{ 'section3' | i18n }}</span> </a></li>
+        <li><a class="nav-link scrollto" href="#funByNumber"><span>{{ 'section4' | i18n }}</span></a></li>
+        <li style="display:none;"><a class="nav-link scrollto" href="#usertest"><span>{{ 'section5' | i18n }}</span></a></li>
+        <li><a class="nav-link scrollto" href="#contact"><span>{{ 'section6' | i18n }}</span></a></li>
+        <li>
+            <a class="nav-link" href="{{ 'news_href' | i18n }}">
+                <i class="bi bi-box-arrow-up-right fs-4 me-3"></i>
+                {{ 'news' | i18n }}
+            </a>
+        </li>
+    </ul>
 
   <i class="bi bi-list mobile-nav-toggle"></i>
 </nav><!-- .navbar -->
