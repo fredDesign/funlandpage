@@ -395,6 +395,30 @@ section {
 
 
 /*--------------------------------------------------------------
+# Emphasized links
+--------------------------------------------------------------*/
+a.btn.btn-emphasized {
+  background: linear-gradient(#e20914, #be1522 50%);
+  background-position: 0 0;
+  background-size: 100% 200%;
+  border-radius: 100vw;
+  border: none;
+  color: #FFF;
+  padding: 0.75rem 1.5rem;
+  transition: all ease-in-out 150ms;
+
+  &.btn-sm {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  &:hover {
+    background-position: 0 100%;
+    color: #FFFB;
+  }
+}
+
+/*--------------------------------------------------------------
 # Index Page
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1307,12 +1331,13 @@ section {
 /*--------------------------------------------------------------
 # prefoot
 --------------------------------------------------------------*/
-
+#news, #contact {
+  background: $lila;
+}
 
 #contact {
  min-height: 400px;
   height: 50vh;
-  background: $lila;
   display: flex;
   justify-content: center;
   align-content: center;

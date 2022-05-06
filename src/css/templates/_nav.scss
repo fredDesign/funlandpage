@@ -194,6 +194,11 @@
     top: 15px;
     right: 15px;
   }
+
+  & > a.btn-emphasized.d-lg-block {
+    display: none !important;
+  }
+
   ul {
     display: flex;
     position: absolute;

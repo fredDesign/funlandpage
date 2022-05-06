@@ -50,6 +50,14 @@ module.exports = {
   },
 
   //nav
+  news: {
+    en: 'News',
+    fr: 'Actualités'
+  },
+  news_href: {
+    en: 'https://info.france-universite-numerique.fr/',
+    fr: 'https://info.france-universite-numerique.fr/'
+  },
   section0: {
     en: "About us",
     fr: "Présentation",
