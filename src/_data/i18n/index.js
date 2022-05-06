@@ -98,10 +98,11 @@ module.exports = {
   },
   undertitle1: {
     en:
+      "France Université Numérique is a public interest group at the service of its members and partners.\n"+
       "We federate a network of universities, research labs, government agencies, edtech\n" +
       "companies and individuals dedicated to building great and sovereign digital services\n" +
       "for education.",
-    fr: "Nous fédérons un réseau d'universités, d'écoles, d'instituts de recherche, d'agences gouvernementales, d'entreprises edtech et de contributeurs qui se consacrent à la construction de services numériques souverains pour l'éducation.",
+    fr: "France Université Numérique est un groupement d’intérêt public au service de ses membres et partenaires. Nous fédérons un réseau d'universités, d'écoles, d'instituts de recherche, d'agences gouvernementales, d'entreprises edtech et de contributeurs qui se consacrent à la construction de services numériques souverains pour l'éducation.",
   },
 
   // section tools
