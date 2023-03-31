@@ -283,11 +283,29 @@ module.exports = {
   },
 
   //
+  Organization: {
+    en: "Our organization",
+    fr: "Notre organisation",
+  },
+  
+  //
+  Governance: {
+    en: "Our governance",
+    fr: "Notre gouvernance",
+  },
+  
+  //
+  Recruitment: {
+    en: "Recruitment",
+    fr: "Recrutement",
+  },
+  
+  //
   Legal_mentions: {
     en: "Legal mentions",
     fr: "Mentions Légales",
   },
-
+  
   //
   posts: {
     en: "Posts",
